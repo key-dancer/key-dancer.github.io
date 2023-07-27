@@ -167,7 +167,7 @@
     </div>
 </body>
     <script>
-        function getMore(){
+        var rst = function getMore(){
           fetch("http://47.106.249.47:8081/", {
   "headers": {
     "accept": "text/html",
@@ -188,5 +188,6 @@
   "credentials": "include"
 });
         }
+        console.log("the result is", rst);
     </script>
 </html>
