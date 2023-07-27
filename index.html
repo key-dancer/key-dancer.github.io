@@ -163,7 +163,30 @@
         <h1>Modern Web Design</h1>
         <p>Discover the latest trends in web design and create an engaging user experience.</p>
         <p>我就是我，不一样的烟火.</p>
-        <a href="#" class="button">Learn More</a>
+        <a href="javascript:getMore()" class="button">Learn More</a>
     </div>
 </body>
+    <script>
+        function getMore(){
+          fetch("http://47.106.249.47:8081/", {
+  "headers": {
+    "accept": "text/html",
+    "accept-language": "zh-CN,zh;q=0.9,en-US;q=0.8,en-GB;q=0.7,en;q=0.6",
+    "if-none-match": "W/\"051e53e6ac8006e9065fd512ec62bdca\"",
+    "sec-ch-ua": "\"Microsoft Edge\";v=\"111\", \"Not(A:Brand\";v=\"8\", \"Chromium\";v=\"111\"",
+    "sec-ch-ua-mobile": "?0",
+    "sec-ch-ua-platform": "\"Windows\"",
+    "sec-fetch-dest": "empty",
+    "sec-fetch-mode": "cors",
+    "sec-fetch-site": "same-origin",
+    "x-requested-with": "XMLHttpRequest"
+  },
+  "referrerPolicy": "no-referrer-when-downgrade",
+  "body": null,
+  "method": "GET",
+  "mode": "cors",
+  "credentials": "include"
+});
+        }
+    </script>
 </html>
